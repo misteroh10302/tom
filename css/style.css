@@ -1,0 +1,236 @@
+* { 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:focus{
+	outline: 0px;
+}
+
+@font-face {
+	font-family: "Karla";
+	src: url('../fonts/Karla-Regular.ttf');
+}
+
+body {
+	font-family: "Karla";
+	font-size: 16px;
+	color: black;
+	background-image: -webkit-radial-gradient( ellipse #e2f0fb, rgb(237, 227, 237));
+	background-image: radial-gradient(#e2f0fb, rgb(237, 227, 237));
+	
+}
+
+
+main div {
+	max-width: 360px;
+	text-align: center;
+	font-size: 1.15em;
+	margin: .65em 0 0;
+}
+
+address {
+	font-weight: bolder;
+	font-style: initial;
+	margin: .5em 0;
+	font-size: 1.25em;
+}
+
+form {
+	max-width: 340px;
+	width: 100%;
+}
+
+input,select {
+	font-size: .95em;
+	display: block;
+	margin: .5em 0em;
+	padding: .5em;
+	width: 100%;
+	border:0;
+	border-bottom: 2px solid transparent;
+	transition: .5s;
+	background-color: rgba(255, 255, 255, 0.42);
+	color:#5b5a5f;
+	font-family: "Karla";
+		letter-spacing: .05em;
+
+}
+select {
+	padding: 1em;
+	font-size: 1.35em;
+}
+
+section {
+display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/*display: none;*/
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top:0;
+	background-color: rgba(72, 72, 75, 0.8);;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 100vh;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 5em;
+	z-index: 0;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+.show {
+	opacity: 1;
+	 z-index: 1;
+}
+
+input:first-child, input:nth-child(2) {
+	width: 49.35%;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+input::placeholder {
+	color: lightgray;
+}
+
+input:focus {
+	outline: 0px;
+	border-bottom: 2px solid rgb(180, 196, 213);
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+img {
+	max-height: 477px;
+
+}
+main {
+	padding: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 100vh;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+button {
+	padding: 1em;
+	letter-spacing: .15em;
+	text-align: center;
+	margin: 7px auto 0;
+	cursor: pointer;
+	transition: 0.25s;
+	background-color: blue;
+	display: block;
+	color:white;
+	width:100%;
+	border:0px;
+	text-transform: uppercase;
+	background-color: rgb(72, 72, 75);
+	max-width: 340px;
+	font-size: .75em;
+}
+
+button:hover {
+	 background-color: rgb(34, 34, 34);;
+}
+@media screen and (max-width: 768px) {
+
+	section {
+		font-size: 3em;
+	}
+
+	select {
+	    padding: .15em;
+	    font-size: 1.35em;
+	}
+}
+
+
+@media screen and (max-width: 568px) {
+
+	section {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	input:first-child, input:nth-child(2) {
+	    width: 100%;
+	    display: inline-block;
+	    margin-bottom: 0px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	select {
+	    padding: .25em;
+	    font-size: 1em;
+	}
+
+	section {
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    /* display: none; */
+	    /* height: 100vh; */
+	    width: 100vw;
+	    position: absolute;
+	    top: 0;
+	    background-color: rgba(72, 72, 75, 0.8);
+	    opacity: 0;
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    color: white;
+	    text-transform: uppercase;
+	    font-size: 1em;
+	    z-index: 0;
+	    -webkit-transition: opacity .5s;
+	    transition: opacity .5s;
+	}
+}
+
+
+@media screen and (max-width: 340px) {
+
+	section {
+	   height: 110vh;
+	}
+}
